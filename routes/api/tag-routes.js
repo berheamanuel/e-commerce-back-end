@@ -78,7 +78,7 @@ router.put('/:id', async (req, res) => {
     },
   });
   if (!tagData) {
-    res.status(404).json({ message: 'No tagwith this id!' });
+    res.status(404).json({ message: 'No tag with this id!' });
     return;
   }
   res.status(200).json(tagData);
